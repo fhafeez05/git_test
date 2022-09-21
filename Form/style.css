@@ -1,0 +1,51 @@
+:root {
+    --left-space: 48px;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color:aliceblue;
+  }
+
+  div.backgroundIMG {
+    float: left;
+    background-repeat: repeat-y;
+    position: relative;
+    
+  }
+
+  .logo  {
+    background: rgba(61, 188, 226, 0.575);
+    position:relative;
+    top: -900px;  
+    left: 125px; 
+    max-width: fit-content; 
+
+  }
+
+  p {
+    float: right;
+    display: block;
+  }
+
+  form {
+    
+  }
+
+ 
+input {
+    border: 2px solid #000;
+    margin-bottom: 15px;
+    padding: 5px;
+    border-radius: 5px;
+  }
+  
+  input:invalid {
+    border-color: red;
+  }
+  
+  input:valid {
+    border-color: blue;
+  }
+
