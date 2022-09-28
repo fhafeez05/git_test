@@ -1,39 +1,95 @@
-:root {
-    --left-space: 48px;
-  }
-  body {
-    margin: 0;
-    padding: 0;
+body {
+    width: 100vw;
+    height: 100vh;
     font-family: sans-serif;
-    background-color:aliceblue;
+    display: flex;
+    overflow: hidden;
+    flex-direction: row;
+    background-color: rgba(0, 0, 0, 0.034);
   }
 
-  div.backgroundIMG {
-    float: left;
-    background-repeat: repeat-y;
-    position: relative;
-    
-  }
+p {
+  font-size: 30px;
 
-  .logo  {
-    background: rgba(61, 188, 226, 0.575);
-    position:relative;
-    top: -900px;  
-    left: 125px; 
-    max-width: fit-content; 
+}
 
-  }
+.backgroundContainer {
+  display: flex;
+  width: 35%;
+  height: 100%;
+  padding-top: 6%;
+  background: url(https://images.unsplash.com/photo-1585202900225-6d3ac20a6962?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80);
+  background-size:cover ;
+  background-position: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
 
-  p {
-    float: right;
-    display: block;
-  }
+.logo {  
+  width: 100%;
+  height: 130px;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
 
-  form {
-    
-  }
+.odin {
+  height: 90%;
+}
 
- 
+form {
+  background-color: rgb(255, 255, 255);
+}
+
+.formContainer {
+  width: 60%;
+  margin-top: 5%;
+  padding: 0;
+  margin: 0;
+  overflow: auto;
+}
+
+
+.formContainer > * {
+  padding: 0% 10% 0% 10%;
+}
+
+.form-label {
+  font-weight: 900;
+  font-size: 20px;
+  display: block;
+  transition: all 0.5s;
+}
+
+
+.inputs {
+  display: flex;
+  width: 90%;
+
+}
+.inputs > :last-child {
+  padding-left: 10%;
+}
+
+.form-end button {  
+  margin-top: 04%;
+  padding: 15px 30px;
+  border-radius: 6px;
+  border: none;
+  font-size: 30px;
+  background: #009900;
+  box-shadow: 0px 0.5px 1px rgba(0, 0, 0, 0.1),
+    inset 0px 0.5px 0.5px rgba(255, 255, 255, 0.5),
+    0px 0px 0px 0.5px rgba(0, 0, 0, 0.12);
+  color: #dfdedf;
+  border-bottom: 2px solid rgb(139, 139, 139);
+  border-right: 2px solid rgb(139, 139, 139);
+}
+
 input {
     border: 2px solid #000;
     margin-bottom: 15px;
